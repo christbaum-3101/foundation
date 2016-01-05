@@ -1,0 +1,54 @@
+body {
+  background-color: #000000;
+  color: #ffffff;
+  cursor: auto;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+h1 {
+  font-family: Helvetica, sans-serif;
+  font-weight: 100;
+  color: #ffffff;
+}
+h3 {
+  font-family: Helvetica, sans-serif;
+  font-size: 90%;
+  color: #ffffff;
+}
+a {
+  background-color: #b3b3b3;
+  color: #ffffff;
+}
+.oben {
+  background-color: #b3b3b3;
+  color: #ffffff;
+}
+footer {
+  text-align: center;
+  background-color: #ffffff;
+  color: #b3b3b3;
+}
+.panel {
+  background-color: #990000;
+  color: #ffffff;
+  padding: 3%;
+  padding-top: 0;
+  border: transparent;
+}
+.boese {
+  height: 50%;
+  width: 50%;
+  margin: auto;
+}
+.button {
+  background-color: #990000;
+  color: #ffffff;
+}
+.button:hover {
+  background-color: #b3b3b3;
+}

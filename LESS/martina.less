@@ -1,0 +1,80 @@
+@hintergrund:     #000000;
+@kontrast:        #990000;
+@oben:            #b3b3b3;
+
+@buttonfarbe:     #990000;
+@schriftbutton:   #FFFFFF;
+
+@schriftfarbe-p:  #FFFFFF;
+@schriftfarbe-h1: #FFFFFF;
+@schriftfarbe-h3: #FFFFFF;
+
+
+
+body {
+  background-color: @hintergrund;
+  color: @schriftfarbe-p;
+  cursor: auto;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  position: relative; }
+
+ h1 {
+    font-family: Helvetica, sans-serif;
+    font-weight: 100; 
+    color: @schriftfarbe-h1;
+ } 
+h3 { 
+    font-family: Helvetica, sans-serif;
+    font-size: 90%; 
+    color: @schriftfarbe-h3;
+ } 
+
+a {
+  background-color: @oben;  
+  color: @schriftfarbe-h1;
+}
+.oben
+{
+  background-color: @oben;  
+  color: @schriftfarbe-h1;
+}
+
+
+footer{
+
+  text-align: center;
+  background-color: @schriftfarbe-h1;
+  color: @oben;
+}
+
+.panel{
+  background-color: @kontrast;
+  color: @schriftfarbe-h1;
+  padding: 3%;
+  padding-top:0;
+  border: transparent;
+}
+
+.boese
+{
+  height: 50%;
+  width: 50%;
+  margin: auto;
+
+}
+
+.button
+{
+  background-color: @buttonfarbe;
+  color: @schriftbutton;
+}
+
+.button:hover{
+  background-color: @oben;
+
+}
