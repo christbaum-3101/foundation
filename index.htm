@@ -5,12 +5,41 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css">
-  <link rel="stylesheet" href="LESS/martina.css" />
+  
 
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="LESS/martina.css" />
 
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+ <script>
+    $(document).ready(function() {
+   
+       $("#smaller").click( function(){
+          alert("mausalarm");
+        })
+
+   <!-- vergrössert Schrift aller p Tags -->
+     $("#greater").click(function () {
+            alert("ok");
+          
+        });
+
+       $("#smaller").click(function () {
+            $("p").animate({
+                fontSize: "-=10px"
+            }, 100);
+        });
+
+
+
+
+    });
+  </script>
+
+
 </head>
 <body>
 
@@ -27,68 +56,67 @@
        <li class="has-dropdown">
         <a href="#">SaTiere</a>
         <ul class="dropdown" class="top-bar">
-          <li><a href="sites/stories.html">Stories</a></li>
-          <li><a href="sites/characters.html">Characters</a></li>
+          <li><a href="sites/stories.htm">Stories</a></li>
+          <li><a href="sites/characters.htm">Characters</a></li>
        </ul>
     <li ><a href="#">Post new Ideas</a></li>
-    <li ><a href="sites/contact_us.html">Contact us</a></li>
+    <li ><a href="sites/contact_us.htm">Contact us</a></li>
     </ul> 
 
     <ul class="left">
-      <li class="active"><a href="#">Home</a></li>
-    </ul>
+      <li class="active"><a href="../index.htm">Home</a></li>
   </section>
 </nav>
 
 
-<div class="row">
-  <div class="medium-12 columns">
-    <div class="panel">
-
-      <div class="boese">
-         <img src="img/boese.png" alt="Strich-Zeichnung eines bösen Gesichtes">
-      </div>
-      <h1>Willkommen auf der bösen Seite der Sa-Tiere! </h1>
-      <br></br>
-      <p>Wählen Sie aus einer unserer bösen Stories aus: </p>
-      <p>Möchten Sie auf die gute Seite wechseln? </p>
-      <br></br>
-      <br></br>
-      
+    <div id="boese" class="panel-kontrast" style="display: none">
+           <img src="img/boese.png" alt="Strich-Zeichnung eines bösen Gesichtes">
+            <h1>Willkommen auf der bösen Seite der Sa-Tiere! </h1>
+           <h3>Freuen Sie sich auf echt böse Gedanken.</h3>
+           <p>Möchten Sie auf die gute Seite wechseln? </p>
+           <p>Viel Gänsehaut!</p>
     </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class="medium-4 columns">
-    <h3>Technik Sa-Tiere</h3>
-    <p>Erfahren Sie hier die dunkle Technik-Geschichte vom Firefox, Cyberduck & Co.</p>
-    <a href="#" class="small radius button" class="myButton">lesen</a><br/>
-          
-  </div>
-  <div class="medium-4 columns">
-    <h3>Health Sa-Tiere</h3>
-    <p>Erfahren Sie hier die dunkle Gesundheits-Geschichte vom Firefox, Cyberduck & Co.</p>
-    <a href="#" class="small radius button" class="myButton">lesen</a><br/>
-  </div>
-  <div class="medium-4 columns">
-    <h3>History Sa-Tiere</h3>
-    <p>Erfahren Sie hier die dunkle Kindheits-Geschichte vom Firefox, Cyberduck & Co.</p>
-    <a href="#" class="small radius button" class="myButton">lesen</a><br/>
-  </div>
-</div>
-
-  <hr>
     
-  <a href="#"><i class="fi-social-facebook"></i></a>
-  <a href="#"><i class="fi-social-twitter"></i></a>
-  <a href="#"><i class="fi-social-google-plus"></i></a>
+    <div class="panel-lesbar">  
+      <br></br>
+      <div class="row">
+        <div class="medium-4 columns">
+          <h3>Technik Sa-Tiere</h3>
+          <p>Erfahren Sie hier die dunkle Technik-Geschichte vom Firefox, Cyberduck & Co.</p>
+          <a href="sites/stories.htm" class="small radius button" >mehr lesen</a><br/>
+                
+        </div>
+        <div class="medium-4 columns">
+          <h3>Health Sa-Tiere</h3>
+          <p>Erfahren Sie hier die dunkle Gesundheits-Geschichte vom Firefox, Cyberduck & Co.</p>
+          <a href="#" class="small radius button" >mehr lesen</a><br/>
+        </div>
+        <div class="medium-4 columns">
+          <h3>History Sa-Tiere</h3>
+          <p>Erfahren Sie hier die dunkle Kindheits-Geschichte vom Firefox, Cyberduck & Co.</p>
+          <a href="#" class="small radius button" >mehr lesen</a><br/>
+        </div>
 
+       <div class="medium-2 columns">
+          <id="smaller" class="small radius button" style="font-size:30px;"><i class="fa fa-search-minus "></i></a><br/>
+        </div>
+     
+       <div class="medium-2 columns">
+          <id="greater" class="small radius button" style="font-size:30px;"><i class="fa fa-search-plus "></i></a><br/>
+        </div>
+     
+
+   </div>
+     
+</div>
+
+<div class="arrow_down"></div>
 
 <footer class="footer">
-      
-      <p><a href"#">Impressum  </a>  |  <a href="#">  Links </a>  |  <a href="#">  About</a></p>
-  
+      <p><a href"#">Impressum  </a> |  <a href="#">  Links </a>  |  <a href="http://www.facebook.com"><i class="fa fa-facebook-square"></i></a>
+        |  <a href="http://twitter.com"><i class="fa fa-twitter-square"></i></a>
+        |  <a href="http://github.com"><i class="fa fa-github"></i></a>
+        |  <a href="#">  About</a></p>
   </div>
     </footer>
 
@@ -96,6 +124,8 @@
 <script>
 $(document).ready(function() {
     $(document).foundation();
+    $("#boese").fadeIn(4000); 
+
 })
 </script>
 

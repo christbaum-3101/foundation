@@ -10,45 +10,112 @@ body {
   padding: 0;
   position: relative;
 }
-h1 {
-  font-family: Helvetica, sans-serif;
-  font-weight: 100;
-  color: #ffffff;
-}
-h3 {
-  font-family: Helvetica, sans-serif;
-  font-size: 90%;
-  color: #ffffff;
-}
-a {
-  background-color: #b3b3b3;
-  color: #ffffff;
-}
-.oben {
-  background-color: #b3b3b3;
-  color: #ffffff;
-}
 footer {
   text-align: center;
-  background-color: #ffffff;
-  color: #b3b3b3;
+  width: 100%;
+  height: 8%;
+  background-color: #000000;
 }
-.panel {
-  background-color: #990000;
+footer p {
+  color: #000000;
+  background-color: #000000;
+}
+footer a {
+  color: #d9d9d9;
+}
+.panel-kontrast {
+  background-color: #b30000;
   color: #ffffff;
-  padding: 3%;
+  padding: 5%;
   padding-top: 0;
   border: transparent;
+  width: 100%;
+  text-align: center;
+  margin: 0;
 }
-.boese {
-  height: 50%;
-  width: 50%;
-  margin: auto;
+.panel-lesbar {
+  background-color: #d9d9d9;
+  color: #000000;
+  padding: 5%;
+  padding-top: 0;
+  border: transparent;
+  width: 100%;
+  text-align: center;
+  margin: 0;
 }
-.button {
-  background-color: #990000;
+.panel-lesbar h1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 2em;
+  font-weight: 100;
+}
+.panel-lesbar h3 {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.7em;
+  font-style: oblique;
+}
+.panel-lesbar a {
+  /*
+      background-color: darken(@oben,50%);       
+      color: contrast(darken(@oben, 50%));*/
+  background-color: #4d0000;
   color: #ffffff;
 }
-.button:hover {
-  background-color: #b3b3b3;
+.panel-lesbar p {
+  font-size: 1em;
+  color: #000000;
+}
+.arrow_down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  padding: 0;
+  margin: 0 auto 0 auto;
+  border-top: 20px solid #d9d9d9;
+}
+.gedanken {
+  padding-left: 25%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-image: url("../img/zitat.png");
+  background-size: 130px 130px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  font-family: arial;
+  font-style: italic;
+  font-size: 1.2em;
+  text-align: left;
+}
+.gedanken_mittel {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-left: 20%;
+  padding-right: 10%;
+  background-image: url("../img/zitat.png");
+  background-size: 80px 60px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  font-family: arial;
+  font-style: italic;
+  font-size: 1.2em;
+  text-align: left;
+}
+.erzaehlung {
+  background-color: #ffffff;
+  color: #000000;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 1.7em;
+  text-align: left;
+}
+.erzaehlung p {
+  font-size: 1em;
+}
+.button {
+  background-color: #4d0000;
+  color: #ffffff;
+}
+.button .hover {
+  background-color: #333333;
 }

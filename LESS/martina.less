@@ -1,19 +1,23 @@
-@hintergrund:     #000000;
-@kontrast:        #990000;
-@oben:            #b3b3b3;
 
-@buttonfarbe:     #990000;
-@schriftbutton:   #FFFFFF;
+@hintergrund:     black;    // schwarz
+@akzent:          #b30000;  // rot
+@oben:            #d9d9d9;  // hellgrau
+@buttonfarbe:     darken(@akzent, 20%);  // dunkles rot
+@buttonhover:     lighten(@hintergrund, 20%);  //dunkelgrau
 
-@schriftfarbe-p:  #FFFFFF;
-@schriftfarbe-h1: #FFFFFF;
-@schriftfarbe-h3: #FFFFFF;
+
+// Background color for the top bar
+//$topbar-bg-color: blue; 
+//$topbar-bg: yellow;
+
+// je nach Hintergrund wird automatisch die Schriftfarbe 
+// auf schwarz oder weiss gesetzt
 
 
 
 body {
   background-color: @hintergrund;
-  color: @schriftfarbe-p;
+  color: contrast(@hintergrund);
   cursor: auto;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
@@ -23,58 +27,149 @@ body {
   padding: 0;
   position: relative; }
 
- h1 {
-    font-family: Helvetica, sans-serif;
-    font-weight: 100; 
-    color: @schriftfarbe-h1;
- } 
-h3 { 
-    font-family: Helvetica, sans-serif;
-    font-size: 90%; 
-    color: @schriftfarbe-h3;
- } 
+ 
 
-a {
-  background-color: @oben;  
-  color: @schriftfarbe-h1;
-}
-.oben
-{
-  background-color: @oben;  
-  color: @schriftfarbe-h1;
-}
+//.oben
+//{
+//  background-color: @oben !important;  
+//  color: contrast(@oben) !important;
+//}
+
+//.top-bar { .oben; }
+//.top-bar-section li:not(.has-form) a:not(.button){
+//  .oben;
+//}
+
+//.top-bar-section li.hover > a:not(.button) {
+//      background-color: @akzent;
+//      color: black; }
 
 
 footer{
-
   text-align: center;
-  background-color: @schriftfarbe-h1;
-  color: @oben;
-}
+  width: 100%;
+  height: 8%;
+  
+  p {
+    color: contrast(@oben);
+    background-color: @hintergrund;
+  }
+  a {
+    color: @oben; }
+    background-color: @hintergrund;
+ 
+ }  
+  
 
-.panel{
-  background-color: @kontrast;
-  color: @schriftfarbe-h1;
-  padding: 3%;
+.panel-kontrast{
+  background-color: @akzent;
+  color: contrast(@akzent);
+  padding: 5%;
   padding-top:0;
   border: transparent;
+  width: 100%;
+  text-align: center;
+  margin: 0; 
 }
 
-.boese
-{
-  height: 50%;
-  width: 50%;
-  margin: auto;
+.panel-lesbar{
+    background-color: @oben;
+    color: contrast(@oben);
+    padding: 5%;
+    padding-top:0;
+    border: transparent;
+    width: 100%;
+    text-align: center;
+    margin: 0; 
+   h1 {
+      font-family: Helvetica, sans-serif;
+      font-size: 2em;
+      font-weight: 100;  } 
+   h3 { 
+      font-family: Helvetica, sans-serif;
+      font-size: 1.7em; 
+      font-style: oblique;} 
+   a {
+      /*
+      background-color: darken(@oben,50%);       
+      color: contrast(darken(@oben, 50%));*/
+      background-color: @buttonfarbe; 
+      color: contrast(@buttonfarbe);
 
+    }
+   p {
+      font-size: 1em; 
+      color: contrast(@oben);}  }
+.arrow_down {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    padding: 0;
+    margin: 0 auto 0 auto;
+    border-top: 20px solid @oben; }
+
+.gedanken
+{
+  padding-left: 25%;
+  padding-right: 10%;
+  padding-top:5%;
+  padding-bottom: 5%;
+  
+
+  background-image: url("../img/zitat.png");
+  background-size: 130px 130px;
+  background-repeat: no-repeat;
+  background-position: left top;  
+  
+  //background-color: @akzent; 
+  //color: contrast(contrast(@akzent));
+  font-family: arial;
+  font-style: italic;
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.gedanken_mittel
+{
+  padding-top:5%;
+  padding-bottom: 5%; 
+  margin-left: 20%;
+  padding-right: 10%;
+
+  background-image: url("../img/zitat.png");
+  background-size: 80px 60px;
+  background-repeat: no-repeat;
+  background-position: left top; 
+  
+  //background-color: @akzent; 
+  //color: contrast(contrast(@akzent));
+  font-family: arial;
+  font-style: italic;
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.erzaehlung
+{
+  background-color: contrast(@hintergrund); 
+  color: @hintergrund;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 1.7em;
+  text-align: left; 
+   p {
+      font-size: 1em; 
+   }
 }
 
 .button
 {
-  background-color: @buttonfarbe;
-  color: @schriftbutton;
+background-color: @buttonfarbe;
+color: contrast(@buttonfarbe);
+.hover
+{
+  background-color: @buttonhover;
 }
-
-.button:hover{
-  background-color: @oben;
 
 }
