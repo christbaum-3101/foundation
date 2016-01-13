@@ -1,5 +1,5 @@
 <?php 
 session_start();
 
-header("Location: post.htm?error=0");
+header("Location: ../index.htm?error=0");
 ?>

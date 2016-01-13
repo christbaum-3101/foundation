@@ -119,3 +119,6 @@ footer a {
 .button .hover {
   background-color: #333333;
 }
+.button .name h3 {
+  color: white;
+}
