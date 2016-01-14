@@ -83,6 +83,9 @@ footer a {
   margin: 0 auto 0 auto;
   border-top: 20px solid #555657;
 }
+.schrift {
+  text-align: center;
+}
 .gedanken {
   padding-left: 15%;
   padding-right: 10%;
@@ -129,4 +132,7 @@ footer a {
 }
 .button .hover {
   background-color: #ffffff;
+}
+.top-bar-section ul li > a.button {
+  background-color: #ff33cc;
 }
