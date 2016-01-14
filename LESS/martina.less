@@ -1,8 +1,8 @@
 
 @hintergrund:     black;    // schwarz
 @akzent:          #b30000;  // rot
-@oben:            #555657;  // Hintergrund dezent, wenn viel Text darauf geschrieben 
-@buttonfarbe:     spin(@hintergrund, 100);  
+@oben:            #b3b3b3;  // Hintergrund dezent, wenn viel Text darauf geschrieben wird 
+@buttonfarbe:     #262626;  // Farbe der Buttons  
 @buttonhover:     contrast(@buttonfarbe);  //Gegenteil 
 
 
@@ -72,9 +72,9 @@ footer{
   margin: 0; 
 
   h1 {
-      color: @buttonhover;} 
+      color: @buttonfarbe;} 
    h3 { 
-      color: saturate(contrast(@akzent), 10%);} 
+      color: saturate(contrast(@buttonfarbe), 10%);} 
 }
 
 .panel-weiss{
@@ -113,6 +113,8 @@ footer{
    p {
       font-size: 1em; 
       color: contrast(@oben);}  }
+
+
 .arrow_down {
     width: 0;
     height: 0;
@@ -126,7 +128,8 @@ footer{
     text-align: center;  
 }
 
-.gedanken
+
+.gedanken_basis
 {
   padding-left: 15%;
   padding-right: 10%;
@@ -134,8 +137,7 @@ footer{
   padding-bottom: 5%;
   
   background-image: url("../img/zitat.png");
-  background-size: 100px 100px;
-  background-repeat: no-repeat;
+   background-repeat: no-repeat;
   background-position: left;  
   
   //background-color: @akzent; 
@@ -146,26 +148,17 @@ footer{
   text-align: left;
 }
 
+
+.gedanken 
+{
+  .gedanken_basis;
+  background-size: 100px 100px;}
+
 .gedanken_mittel
 {
-  padding-left: 15%;
-  padding-right: 10%;
-  padding-top:5%;
-  padding-bottom: 5%;
- 
-  background-image: url("../img/zitat.png");
+  .gedanken_basis;
   background-size: 70px 70px;
-  background-repeat: no-repeat;
-  //background-position: left; 
-  background-position: left;
-  
-  //background-color: @akzent; 
-  //color: contrast(contrast(@akzent));
-  font-family: arial;
-  font-style: italic;
-  font-size: 1.2em;
-  text-align: left;
-}
+ }
 
 .erzaehlung
 {
@@ -195,12 +188,7 @@ box-shadow: 0px 5px 0px lighten(@buttonfarbe, 10%);
            background-color: #ff33cc;
 }
 
-.range-slider
-{
-  width: 800px;
-  hight: 300px;
 
-}
 
 
 .ui-widget-header {

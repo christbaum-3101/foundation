@@ -17,11 +17,11 @@ footer {
   background-color: #000000;
 }
 footer p {
-  color: #ffffff;
+  color: #000000;
   background-color: #000000;
 }
 footer a {
-  color: #555657;
+  color: #b3b3b3;
 }
 .panel-kontrast {
   background-color: #b30000;
@@ -34,7 +34,7 @@ footer a {
   margin: 0;
 }
 .panel-kontrast h1 {
-  color: #ffffff;
+  color: #262626;
 }
 .panel-kontrast h3 {
   color: #ffffff;
@@ -44,8 +44,8 @@ footer a {
   color: schwarz;
 }
 .panel-lesbar {
-  background-color: #555657;
-  color: #ffffff;
+  background-color: #b3b3b3;
+  color: #000000;
   padding: 5%;
   padding-top: 0;
   border: transparent;
@@ -67,12 +67,12 @@ footer a {
   /*
       background-color: darken(@oben,50%);       
       color: contrast(darken(@oben, 50%));*/
-  background-color: #000000;
+  background-color: #262626;
   color: #ffffff;
 }
 .panel-lesbar p {
   font-size: 1em;
-  color: #ffffff;
+  color: #000000;
 }
 .arrow_down {
   width: 0;
@@ -81,10 +81,23 @@ footer a {
   border-right: 20px solid transparent;
   padding: 0;
   margin: 0 auto 0 auto;
-  border-top: 20px solid #555657;
+  border-top: 20px solid #b3b3b3;
 }
 .schrift {
   text-align: center;
+}
+.gedanken_basis {
+  padding-left: 15%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-image: url("../img/zitat.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  font-family: arial;
+  font-style: italic;
+  font-size: 1.2em;
+  text-align: left;
 }
 .gedanken {
   padding-left: 15%;
@@ -92,13 +105,13 @@ footer a {
   padding-top: 5%;
   padding-bottom: 5%;
   background-image: url("../img/zitat.png");
-  background-size: 100px 100px;
   background-repeat: no-repeat;
   background-position: left;
   font-family: arial;
   font-style: italic;
   font-size: 1.2em;
   text-align: left;
+  background-size: 100px 100px;
 }
 .gedanken_mittel {
   padding-left: 15%;
@@ -106,13 +119,13 @@ footer a {
   padding-top: 5%;
   padding-bottom: 5%;
   background-image: url("../img/zitat.png");
-  background-size: 70px 70px;
   background-repeat: no-repeat;
   background-position: left;
   font-family: arial;
   font-style: italic;
   font-size: 1.2em;
   text-align: left;
+  background-size: 70px 70px;
 }
 .erzaehlung {
   background-color: #ffffff;
@@ -126,19 +139,15 @@ footer a {
   font-size: 1em;
 }
 .button {
-  background-color: #000000;
+  background-color: #262626;
   color: #ffffff;
-  box-shadow: 0px 5px 0px #1a1a1a;
+  box-shadow: 0px 5px 0px #404040;
 }
 .button .hover {
   background-color: #ffffff;
 }
 .top-bar-section ul li > a.button {
   background-color: #ff33cc;
-}
-.range-slider {
-  width: 800px;
-  hight: 300px;
 }
 .ui-widget-header {
   background: #cedc98;
