@@ -82,19 +82,30 @@
 
 
 <div class="panel-lesbar">  
-      <div class="schrift">
-                    <button id="smaller" class="small radius button" style="font-size:30px;"><i class="fa fa-search-minus"></i></a><br/></button>
-              <button id="greater" class="small radius button" style="font-size:30px;"><i class="fa fa-search-plus"></i></a><br/></button>
-        </div>
-      
+  <div class="schrift">
+                <button id="smaller" class="small radius button" style="font-size:30px;"><i class="fa fa-search-minus"></i></a><br/></button>
+          <button id="greater" class="small radius button" style="font-size:30px;"><i class="fa fa-search-plus"></i></a><br/></button>
+    </div>
+  
 
-      <br></br>
-      <form action="send.php" method="post">
-        <p>Welcher Figur soll was zustossen:</p>
+  <br></br>
+  <form action="send.php" method="post">
+        <p>Bitte beschreiben Sie sehr konkret, welcher Figur in der Geschichte was genau zustossen soll:</p>
         <textarea name="gemeinheit" maxlength="500" autofocus> </textarea>
-        <input type="submit" class="small radius button"  value="posten"/>
-      </form>        
+      
+        <label id="slider-wichtig"><p>Wie wichtig ist Ihnen dieses Posting in Prozent?</p></label>
+              <div class="range-slider" data-slider data-options="start:1; end: 10;">
+                <span class="range-slider-handle" role="slider" tabindex="0" aria-labelledby="slider-wichtig"></span>
+                <span class="range-slider-active-segment"></span>
+                <input type="hidden">
+              </div>
+
+  <input type="submit" class="small radius button"  value="posten"/>
+  </form>       
 </div>  
+
+
+
 
 
 <div class="arrow_down"></div>
