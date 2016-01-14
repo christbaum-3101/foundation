@@ -6,54 +6,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
 <title>Accessible jQuery-ui Components Demo</title>
-  <script type="text/javascript" src="jquery-ui-min/jquery-1.7.2.min.js"></script>
-
-  <!-- jQuery-UI Core files (minified) -->
-  <link type="text/css" href="jquery-ui-min/jquery-ui.min.css" rel="stylesheet" />
-  <link type="text/css" href="jquery-ui-min/jquery.ui.menubar.css" rel="stylesheet" />
-  <script type="text/javascript" src="jquery-ui-min/jquery-ui.min.js"></script>
-
-  <!-- JCarousel specific files -->
-  <link rel="stylesheet" type="text/css" href="jcarousel/skins/tango/skin.css" />
-  <script type="text/javascript" src="jcarousel/lib/jquery.jcarousel.js"></script>
-
-  <!-- JSTree plugin files -->
-  <script type="text/javascript" src="jstree-a11y/jsTree.v.1.0rc2/lib/jquery.cookie.js"></script>
-  <script type="text/javascript" src="jstree-a11y/jsTree.v.1.0rc2/lib/jquery.hotkeys.js"></script>
-  <script type="text/javascript" src="jstree-a11y/jsTree.v.1.0rc2/jquery.jstree.js"></script>
-
-  <!-- Temporary Datepicker Files -->
-  <script type="text/javascript" src="jquery-ui-min/external/globalize.js"></script>
-  <script type="text/javascript" src="jquery-ui-min/datepicker-rewrite/localization.js"></script>
-  <script type="text/javascript" src="jquery-ui-min/datepicker-rewrite/date.js"></script>
-  <script type="text/javascript" src="jquery-ui-min/datepicker-rewrite/picker.js"></script>
-  <script type="text/javascript" src="jquery-ui-min/datepicker-rewrite/jquery.tmpl.js"></script>
-
-
-
-
-
-
-
-
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css">
-  
-  <script type="text/javascript" src="jquery-ui-min/jquery-1.7.2.min.js"></script>
-
-  <!-- jQuery-UI Core files (minified) -->
-  <link type="text/css" href="jquery-ui-min/jquery-ui.min.css" rel="stylesheet" />
-  <link type="text/css" href="jquery-ui-min/jquery.ui.menubar.css" rel="stylesheet" />
-  <script type="text/javascript" src="jquery-ui-min/jquery-ui.min.js"></script>
-
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css">
   
 
- <link rel="stylesheet" href="../LESS/martina.css" />
-
-
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+ 
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+  <link rel="stylesheet" href="../LESS/martina.css" />
+
+
+ <script type="text/javascript">
+   
+ 
+    $(document).ready(function() {
+   
+     /*$("#slider").slider();*/ 
+  
+
+    /* vergrössert Schrift aller p Tags */
+      $("#greater").click(function () {
+           $("p").animate({
+                fontSize: "+=1px"
+
+            }, 100);
+        });
+
+       $("#smaller").click(function () {
+            $("p").animate({
+                  fontSize: "-=1px"
+            }, 100);
+        });
+
+     
+
+
+    });
+  </script>
+
 </head>
 <body>
 
@@ -91,6 +82,13 @@
     </div>
     
     <div class="panel-lesbar">  
+       
+        <div class="medium-2 columns">
+              <button id="smaller" class="small radius button" style="font-size:30px;"><i class="fa fa-search-minus"></i></a><br/></button>
+              <button id="greater" class="small radius button" style="font-size:30px;"><i class="fa fa-search-plus"></i></a><br/></button>
+        </div>
+      
+
       <br></br>
       <div class="row">
         <div class="medium-12 columns">
@@ -123,15 +121,6 @@
               </li>
             </ul>
 
-
-      <h2>Demo: Example sliders for choosing a price</h2>
-      <h3>Choose the price slider</h3>
-      <label for="txt1">Price:</label>
-      <div style="padding: 25px;">
-        <span id="slider1Val" class="sliderValue"></span>
-        <div id="singleSlider1" class="demoWidget"></div>
-        <input id="txt1"  type="text" class="fallback"/>
-      </div>
  
 </div>
 <div class="arrow_down"></div>

@@ -1,9 +1,9 @@
 
 @hintergrund:     black;    // schwarz
 @akzent:          #b30000;  // rot
-@oben:            #d9d9d9;  // hellgrau
-@buttonfarbe:     darken(@akzent, 20%);  // dunkles rot
-@buttonhover:     lighten(@hintergrund, 20%);  //dunkelgrau
+@oben:            #555657;  // Hintergrund dezent, wenn viel Text darauf geschrieben 
+@buttonfarbe:     spin(@hintergrund, 100);  
+@buttonhover:     contrast(@buttonfarbe);  //Gegenteil 
 
 
 // Background color for the top bar
@@ -70,7 +70,20 @@ footer{
   width: 100%;
   text-align: center;
   margin: 0; 
+
+  h1 {
+      color: @buttonhover;} 
+   h3 { 
+      color: saturate(contrast(@akzent), 10%);} 
 }
+
+.panel-weiss{
+  background-color: weiss;
+  color: schwarz;
+  
+}
+
+
 
 .panel-lesbar{
     background-color: @oben;
@@ -111,16 +124,15 @@ footer{
 
 .gedanken
 {
-  padding-left: 25%;
+  padding-left: 15%;
   padding-right: 10%;
   padding-top:5%;
   padding-bottom: 5%;
   
-
   background-image: url("../img/zitat.png");
-  background-size: 130px 130px;
+  background-size: 100px 100px;
   background-repeat: no-repeat;
-  background-position: left top;  
+  background-position: left;  
   
   //background-color: @akzent; 
   //color: contrast(contrast(@akzent));
@@ -132,15 +144,16 @@ footer{
 
 .gedanken_mittel
 {
-  padding-top:5%;
-  padding-bottom: 5%; 
-  margin-left: 20%;
+  padding-left: 15%;
   padding-right: 10%;
-
+  padding-top:5%;
+  padding-bottom: 5%;
+ 
   background-image: url("../img/zitat.png");
-  background-size: 80px 60px;
+  background-size: 70px 70px;
   background-repeat: no-repeat;
-  background-position: left top; 
+  //background-position: left; 
+  background-position: left;
   
   //background-color: @akzent; 
   //color: contrast(contrast(@akzent));
@@ -167,21 +180,9 @@ footer{
 {
 background-color: @buttonfarbe;
 color: contrast(@buttonfarbe);
+box-shadow: 0px 5px 0px lighten(@buttonfarbe, 10%);
 .hover
 {
   background-color: @buttonhover;
 }
-
-
-.name{
-h3 { 
-      color: white; 
-}}
-
-
-
-
-
-
-
 }

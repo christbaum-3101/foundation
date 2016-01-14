@@ -5,39 +5,38 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css">
-  
-
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="LESS/martina.css" />
-
+        <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+  <link rel="stylesheet" href="LESS/martina.css" />
 
- <script>
+
+  <script>
+   
+ 
     $(document).ready(function() {
    
-       $("#smaller").click( function(){
-          alert("mausalarm");
-        })
+     /*$("#slider").slider();*/ 
+  
 
-   <!-- vergrössert Schrift aller p Tags -->
-     $("#greater").click(function () {
-            alert("ok");
-          
+    /* vergrössert Schrift aller p Tags */
+      $("#greater").click(function () {
+           $("p").animate({
+                fontSize: "+=1px"
+
+            }, 100);
         });
 
        $("#smaller").click(function () {
             $("p").animate({
-                fontSize: "-=10px"
+                  fontSize: "-=1px"
             }, 100);
         });
-
-
-
-
     });
   </script>
+
 
 
 </head>
@@ -82,33 +81,30 @@
     </div>
     
     <div class="panel-lesbar">  
+            <div class="schrift">
+              <button id="smaller" class="small radius button" style="font-size:30px;"><i class="fa fa-search-minus "></i></a><br/></button>
+              <button id="greater" class="small radius button" style="font-size:30px;"><i class="fa fa-search-plus "></i></a><br/></button>
+            </div>
+         
+
       <br></br>
       <div class="row">
         <div class="medium-4 columns">
           <h3>Technik Sa-Tiere</h3>
           <p>Erfahren Sie hier die dunkle Technik-Geschichte vom Firefox, Cyberduck & Co.</p>
-          <a href="sites/stories.htm" class="small radius button" >mehr lesen</a><br/>
-                
+          <a href="sites/stories.htm" class="small radius button" alt="weiter zur Technik-Geschichte">mehr lesen</a><br/>
+  
         </div>
         <div class="medium-4 columns">
           <h3>Health Sa-Tiere</h3>
           <p>Erfahren Sie hier die dunkle Gesundheits-Geschichte vom Firefox, Cyberduck & Co.</p>
-          <a href="#" class="small radius button" >mehr lesen</a><br/>
+          <a href="#" class="small radius button" alt="weiter zur Gesundheits-Geschichte">mehr lesen</a><br/>
         </div>
         <div class="medium-4 columns">
           <h3>History Sa-Tiere</h3>
           <p>Erfahren Sie hier die dunkle Kindheits-Geschichte vom Firefox, Cyberduck & Co.</p>
-          <a href="#" class="small radius button" >mehr lesen</a><br/>
+          <a href="#" class="small radius button" alt="weiter zur Kindheits-Geschichte" >mehr lesen</a><br/>
         </div>
-
-       <div class="medium-2 columns">
-          <id="smaller" class="small radius button" style="font-size:30px;"><i class="fa fa-search-minus "></i></a><br/>
-        </div>
-     
-       <div class="medium-2 columns">
-          <id="greater" class="small radius button" style="font-size:30px;"><i class="fa fa-search-plus "></i></a><br/>
-        </div>
-     
 
    </div>
      

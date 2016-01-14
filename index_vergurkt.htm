@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SaTiere dunkle Seite</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.js"></script>
+ 
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css"></link>
+  
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"></link>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation/foundation.slider.js"></script>   -->
+ 
+ 
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.css"></link> -->
+  
+
+
+     
+
+  <link rel="stylesheet" href="LESS/martina.css" /></link>
+
+ <script type="text/javascript">
+   
+ 
+    $(document).ready(function() {
+   
+     /*$("#slider").slider();*/ 
+  
+
+    /* vergrössert Schrift aller p Tags */
+      $("#greater").click(function () {
+           $("p").animate({
+                fontSize: "+=1px"
+
+            }, 100);
+        });
+
+       $("#smaller").click(function () {
+            $("p").animate({
+                  fontSize: "-=1px"
+            }, 100);
+        });
+
+     
+
+
+    });
+  </script>
+
+
+</head>
+<body>
+<!-- <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large"> -->
+
+<nav class="top-bar" data-topbar> 
+  <ul class="title-area">
+    <li class="name">
+        <h1>Sa-Tiere...</h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menue</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+  <ul>  
+  <li class="active"><a href="index.htm">Home</a></li>
+
+    <ul class="right">
+
+       <li class="has-dropdown">
+        <a href="#">SaTiere</a>
+        <ul class="dropdown" class="top-bar">
+          <li><a href="sites/stories.htm">Stories</a></li>
+          <li><a href="sites/characters.htm">Characters</a></li>
+       </ul>
+    <li ><a href="sites/post.htm">Post new Ideas</a></li>
+    <li ><a href="sites/contact_us.htm">Contact us</a></li>
+    </ul> 
+
+    
+  </section>
+</nav>
+
+
+    <div id="boese" class="panel-kontrast" style="display:none;">
+           <img src="img/boese.png" alt="Strich-Zeichnung eines bösen Gesichtes">
+            <h1>Willkommen auf der bösen Seite der Sa-Tiere! </h1>
+           <h3>Freuen Sie sich auf echt böse Gedanken.</h3>
+           <p>Möchten Sie auf die gute Seite wechseln? </p>
+           <p>Viel Gänsehaut!</p>
+    </div>
+    
+    <div class="panel-lesbar">  
+    
+ <br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+ <div class="slider" data-slider data-initial-start="50" data-end="200" style="height=50px;">
+          <span class="slider-handle"  data-slider-handle role="slider" tabindex="1"></span>
+          <span class="slider-fill" data-slider-fill></span>
+          <input type="hidden">
+    </div>  
+
+
+
+
+    <div class="medium-2 columns">
+
+          <div>
+              <button id="smaller" class="small radius button" style="font-size:30px;"><i class="fa fa-search-minus"></i></a><br/></button>
+              <button id="greater" class="small radius button" style="font-size:30px;"><i class="fa fa-search-plus"></i></a><br/></button>
+          </div>
+      </div>
+
+
+      <br></br>
+      <div class="row">
+        <br></br>
+        <div class="medium-4 columns">
+          <h3>Technik Sa-Tiere</h3>
+          <p>Erfahren Sie hier die dunkle Technik-Geschichte vom Firefox, Cyberduck & Co.</p>
+          <a href="sites/stories.htm" class="small radius button" >mehr lesen</a><br/>
+                
+        </div>
+        <div class="medium-4 columns">
+          <h3>Health Sa-Tiere</h3>
+          <p>Erfahren Sie hier die dunkle Gesundheits-Geschichte vom Firefox, Cyberduck & Co.</p>
+          <a href="#" class="small radius button" >mehr lesen</a><br/>
+        </div>
+        <div class="medium-4 columns">
+          <h3>History Sa-Tiere</h3>
+          <p>Erfahren Sie hier die dunkle Kindheits-Geschichte vom Firefox, Cyberduck & Co.</p>
+          <a href="#" class="small radius button" >mehr lesen</a><br/>
+        </div>
+      </div>    
+      
+     
+</div>
+
+<div class="arrow_down"></div>
+
+<footer class="footer">
+      <p><a href"#">Impressum  </a> |  <a href="#">  Links </a>  |  <a href="http://www.facebook.com"><i class="fa fa-facebook-square"></i></a>
+        |  <a href="http://twitter.com"><i class="fa fa-twitter-square"></i></a>
+        |  <a href="http://github.com"><i class="fa fa-github"></i></a>
+        |  <a href="#">  About</a></p>
+  </div>
+    </footer>
+
+<!-- Initialize Foundation JS for the collapsible button to work-->
+<script>
+$(document).ready(function() {
+    $(document).foundation();
+    $("#boese").fadeIn(4000); 
+
+})</script>
+
+   <script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script> 
+
+
+
+
+
+
+</body>
+</html>

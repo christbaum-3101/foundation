@@ -5,12 +5,43 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css">
-      
-  <link rel="stylesheet" href="../LESS/martina.css" />
+  
 
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+ 
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+  <link rel="stylesheet" href="../LESS/martina.css" />
+
+
+ <script type="text/javascript">
+   
+ 
+    $(document).ready(function() {
+   
+     /*$("#slider").slider();*/ 
+  
+
+    /* vergrössert Schrift aller p Tags */
+      $("#greater").click(function () {
+           $("p").animate({
+                fontSize: "+=1px"
+
+            }, 100);
+        });
+
+       $("#smaller").click(function () {
+            $("p").animate({
+                  fontSize: "-=1px"
+            }, 100);
+        });
+
+     
+
+
+    });
+  </script>
 </head>
 <body>
 
@@ -45,12 +76,19 @@
  <div id="boese" class="panel-kontrast" style="display: none">
           <img src="../img/boese.png" width="13%" alt="Strich-Zeichnung eines bösen Gesichtes">
                 <h1>Technik Sa-Tiere </h1>
-           <h3>Es war einmal vor langer Zeit ...</h3>
+           <h3>Diese Geschichte ist nicht für Menschen ohne medientechnisches Wissen geeignet.</h3>
+           <p>Erzählt wird eine rein fiktive Geschichte, in der viele Fachbegriffe vorkommen.</p>
     </div>
 
 <div class="erzaehlung">
-  
+       <div class="panel-weiss">  
+          <div class="medium-2 columns">
+              <button id="smaller" class="small radius button" style="font-size:30px;"><i class="fa fa-search-minus"></i></a><br/></button>
+              <button id="greater" class="small radius button" style="font-size:30px;"><i class="fa fa-search-plus"></i></a><br/></button>
+          </div>
+   
       <br></br>
+     <br></br>
     
           <p>Es war einmal in einem tiefen und finsteren Wald mit vielen    
               <img src="../img/sourceTree.jpg" alt="Bild eines speziellen Baums, dem Source Tree." height="100" width="100">  
@@ -58,110 +96,113 @@
               <img src="../img/sourceTree.jpg" alt="Bild eines speziellen Baums, dem Source Tree." height="100" width="100">  
             
 
-              . Heute ist der 12. Geburtstag der kleinen 
-                 <img src="../img/cyberduck.png" height="100" width="100">
-              , sie denkt:</p>
+              an einem herrlichen Arbeitstag (also an keinem Montag). Heute ist ein besonderer Tag, nämlich der 12. Geburtstag der kleinen 
+                 <img src="../img/cyberduck2.jpg" alt="Bild von der Ente Cyberduck." height="100" width="100">
+              und sie säufzt tief mit großem Schmerz in der Brust, sie denkt sich:</p>
           <div class="gedanken">
-            <p>hhhh niemand hat mir heute zum Geburtstag gratuliert. Die wollen mich zuhause sicher nicht mehr haben. Denen zeig ich´s! Ich bleib nicht zuhaus, sondern ich lauf weg! Weit weg!!!</p>
+            <p>Niemand hat mir heute zum Geburtstag gratuliert. Die wollen mich zuhause sicher nicht mehr haben. Denen zeig ich´s! Ich bleib nicht zuhaus, sondern ich lauf weg! Weit weg!!!</p>
           </div>  
-              <p>Die kleine <img src="../img/github.png" height="100" width="100">
-           begleitet sie, doch sie hat es sehr schwer um mit den großen Schritten des <img src="../img/cyberduck.png" height="100" width="100"> mitzuhalten. </p>
+              <p>Die kleine <img src="../img/github.png" alt="Bild von der Katze Github." height="170" width="170">
+           begleitet sie, doch sie hat es sehr schwer um mit den großen Schritten des <img src="../img/cyberduck2.jpg" alt="Bild der Ente Cyberduck." height="100" width="100"> mitzuhalten. </p>
           <div class="gedanken_mittel">
              <p>Wo soll ich nur hin?</p>
           </div>   
-          <p>fragt sie sich ständig. Plötzlich hat sie eine schlechte Idee und sie macht sich auf den Weg um sich ins <img src="../img/facebook.jpg" height="100" width="100"> eintragen zu lassen, denn dies hat ihr ihre Mutter bis jetzt immer verboten.</p><br></br> 
+          <p>fragt sie sich ständig. Plötzlich hat sie eine schlechte Idee und sie macht sich auf den Weg um sich ins <img src="../img/facebook.jpg" alt="Bild der social Media Plattform facebook" height="100" width="100"> eintragen zu lassen, denn dies hat ihr ihre Mutter bis jetzt immer verboten.</p>
 
-          <p>Der Weg ist steinig und sehr gefährlich. Der Weg hat eine sehr geringe Bandbreite, die Ausweichmöglichkeiten vor den gräßlichen und gefrässigen <img src="../img/worms.jpg" height="100" width="100"> sind stark eingeschränkt. Als ob das nicht schon schlimm genug wäre, fällt ihr ein:</p><br></br>
+          <p>Der Weg ist steinig und sehr gefährlich. Der Weg hat eine sehr geringe Bandbreite, die Ausweichmöglichkeiten vor den gräßlichen und gefrässigen <img src="../img/worms.jpg" alt="Bild Wurms." height="100" width="100"> sind stark eingeschränkt. Als ob das nicht schon schlimm genug wäre, fällt ihr ein:</p>
           <div class="gedanken">
-              <p>Mist! Ich hab mein Foto fürs <img src="../img/facebook.jpg" height="100" width="100"> vergessen. Ohne Foto kann ich mich doch nicht eintragen lassen. Das auch noch, an meinem einsamsten Geburtstag, ever.</p><br></br> 
+              <p>Mist! Ich hab mein Foto fürs <img src="../img/facebook.jpg" alt="Bild der social Medie Plattform facebook" height="100" width="100"> vergessen. Ohne Foto kann ich mich doch nicht eintragen lassen. Das auch noch, an meinem einsamsten Geburtstag, ever.</p>
           </div>     
 
-          <p><img src="../img/github.png" height="100" width="100"> ist eine sehr schlaue Katze und sie möchte dem <img src="../img/cyberduck.png" height="100" width="100"> gerne helfen und huscht fast mit UMTS-Geschwindigkeit den Weg ein Stück nach vorne und miaut ein Schild an, worauf geschrieben steht:</p><br></br> 
+          <p><img src="../img/github.png" alt="Bild von der Katze Github." height="170" width="170"> ist eine sehr schlaue Katze und sie möchte dem <img src="../img/cyberduck2.jpg" alt="Bild von der Ente Cyberduck." height="100" width="100"> gerne helfen und huscht fast mit UMTS-Geschwindigkeit den Weg ein Stück nach vorne und miaut ein Schild an, worauf geschrieben steht:</p><br></br> 
           <div class="gedanken">
-              <p>Kaufen Sie ihr schönstes Foto! Sie erhalten gratis dazu ein <img src="../img/iphone.jpg" height="100" width="100"></p>
+              <p>Kaufen Sie ihr schönstes Foto! Sie erhalten gratis dazu ein <img src="../img/iphone.jpg" alt="Bild von einem Iphone Telefon." height="100" width="100"></p>
           </div>    
 
-          <p>Die <img src="../img/cyberduck.png" height="100" width="100"> ist schon so viel Ärger gewohnt, dass sie sich gar nicht mehr freuen kann, weil das <img src="../img/photoshop2.jpg" height="100" width="100"> ist in <img src="../img/burning-rom.jpg" height="100" width="100">.</p>
+          <p>Die <img src="../img/cyberduck2.jpg" alt="Bild von der Ente Cyberduck." height="100" width="100"> ist schon so viel Ärger gewohnt, dass sie sich gar nicht mehr freuen kann, weil das <img src="../img/photoshop2.jpg" alt="Bild einer Bildbearbeitungssoftware Photoshop" height="100" width="100"> ist in <img src="../img/burning-rom.jpg" alt="Bild einer Software zum Brennen von CDs mit Namen Burning Rom" height="150" width="150">.</p>
 
           <div class="gedanken">
-              <p>Wie soll ich da denn bloß hinkommen, du Schlaumeier-Katze? Das geht doch nie.</p><br></br>
+              <p>Wie soll ich da denn bloß hinkommen, du Schlaumeier-Katze? Das geht doch nie.</p>
           </div>     
 
-          <p>Doch die <img src="../img/github.png" height="100" width="100">gibt nicht auf und läuft mit ihrem eingebauten 64GH Prozessor ins nächste Dorf zum Marktstand mit der Aufschrift: <img src="../img/Google-maps.png" height="100" width="100">.
-          Für 7 private Informationen erhält sie die Wegauskunft nach <img src="../img/burning-rom.jpg" height="100" width="100">:</p><br></br>
+          <p>Doch die <img src="../img/github.png" alt="Bild von der Katze Github." height="170" width="170">gibt nicht auf und läuft mit ihrem eingebauten 64GH Prozessor ins nächste Dorf zum Marktstand mit der Aufschrift: <img src="../img/Google-maps.png" alt="Bild der Landkarten-Software Google Maps." height="100" width="100">.
+          Für 7 private Informationen erhält sie die Wegauskunft nach <img src="../img/burning-rom.jpg" alt="Bild einer Software zum Brennen von CDs mit Namen Burning Rom" height="150" width="150">:</p>
 
           <div class="gedanken">
-               <p>„Links soll ich gehen? Ich hasse es, links zu gehen. Ich hasse mein Leben. Wäre ich doch nur zuhause geblieben“</p><br></br>
+               <p>Links soll ich gehen? Ich hasse es, links zu gehen. Ich hasse mein Leben. Wäre ich doch nur zuhause geblieben!</p><br></br>
           </div> 
-          <p><img src="../img/cyberduck.png" height="100" width="100">setzt sich auf einen Baumstamm und beginnt jämmerlich zu weinen. Da kommt ein kleines <img src="../img/squirrel.jpg" height="100" width="100">vorbei und stellt ihm eine <img src="../img/jquery.png" height="100" width="100">:</p><br></br> 
+          <p><img src="../img/cyberduck2.jpg" alt="Bild von der Ente Cyberduck." height="100" width="100">setzt sich auf einen Baumstamm und beginnt jämmerlich zu weinen. Da kommt ein kleines <img src="../img/squirrel.jpg" alt="Bild eines Eichhörnchens, auch Logo einer SQL Software" height="100" width="100">vorbei und stellt ihm eine <img src="../img/jquery.png" alt="Bild einer Software Abfragen von SQL" height="150" width="150">:</p>
 
           <div class="gedanken">
                 <p>SELECT beweggründe FROM verstehe-die-Menschen WHERE ort=strassenrand  AND person=kind AND augen=tropfen</p><br></br>
           </div> 
 
-          <p>Doch das <img src="../img/cyberduck.png" height="100" width="100">versteht sie nicht, also gibt sie die Frage in den <img src="../img/googleTranslate.jpg" height="100" width="100">  ein. Dieser wurde aber von bösen Studenten der fh St. Pölten gehackt und deswegen erhält sie folgende Übersetzung:</p><br></br>
-
+          <p>Doch das <img src="../img/cyberduck2.jpg" alt="Bild von der Ente Cyberduck." height="100" width="100">versteht sie nicht, also gibt sie die Frage in den <img src="../img/googleTranslate.jpg" alt="Bild einer Übersetzungssoftware Google Translate" height="200" width="200">  ein. Dieser wurde aber von bösen Studenten der fh St. Pölten gehackt und deswegen erhält sie folgende Übersetzung:</p>
+          
           <div class="gedanken">
-                <p>Willst du mich heiraten und mit mir eine lebenslange <img src="../img/unity.jpg" height="100" width="100"> bilden?</p><br></br>
+                <p>Willst du mich heiraten und mit mir eine lebenslange <img src="../img/unity.jpg" alt="Bild einer Software Erstellen von Spielen mit Namen unity" height="150" width="150"> bilden?</p>
           </div> 
-          <p>Das <img src="../img/squirrel.jpg" height="100" width="100"> ist überrascht, als ihm das <img src="../img/cyberduck.png" height="100" width="100"> um den Hals fällt und sich Herzchen in ihren Augen bilden. Auch <img src="../img/squirrel.jpg" height="100" width="100"> hat ein kleines Problem bei der Interpretation und sieht statt den Herzen seine Lieblingsspeise: Eicheln. Die beiden umarmen sich und schweben in der 7. <img src="../img/icloud.jpg" height="100" width="100"> . Das <img src="../img/squirrel.jpg" height="100" width="100"> denkt:</p><br></br>
-
+          <p>Das <img src="../img/squirrel.jpg" alt="Bild des Eichhörnchens Squirrel" height="100" width="100"> ist überrascht, als ihm das <img src="../img/cyberduck2.jpg" alt="Bild von der Ente Cyberduck." height="100" width="100"> um den Hals fällt und sich Herzchen in ihren Augen bilden. Auch <img src="../img/squirrel.jpg" alt="Bild des Eichhörnchens Squirrel" height="100" width="100"> hat ein kleines Problem bei der Interpretation und sieht statt den Herzen seine Lieblingsspeise: Eicheln. Die beiden umarmen sich und schweben in der 7. <img src="../img/icloud.jpg" alt="Bild der Software ICloud in der Daten im Internet gespeichert werden" height="100" width="100"> . Das <img src="../img/squirrel.jpg" alt="Bild des Eichhörnchens Squirrel"  height="100" width="100"> denkt:</p>
           <div class="gedanken">
-                <p>soetwas habe ich mir schon so oft im <img src="../img/dreamweaver.jpg" height="100" width="100"> erträumt! Mein Lieblingsessen in ihren Augen!</p><br></br>
+                <p>soetwas habe ich mir schon so oft im <img src="../img/dreamweaver.jpg" alt="Bild der Software Dreamweaver" height="200" width="200"> erträumt! Mein Lieblingsessen in ihren Augen!</p>
           </div> 
-          <p>Das <img src="../img/cyberduck.png" height="100" width="100">, das <img src="../img/squirrel.jpg" height="100" width="100">und die <img src="../img/github.png" height="100" width="100"> machen sich weiter auf den Weg „nach links“ ins <img src="../img/photoshop2.jpg" height="100" width="100"> nach <img src="../img/burning-rom.jpg" height="100" width="100"> . Neben ihnen fließt der wilde und gefährliche Fluss <img src="../img/amazon.png" height="100" width="100"> „as“, sogar <img src="../img/wireshark.jpg" height="100" width="100"> und <img src="../img/mySQL.png" height="100" width="100">  schwimmen darin umher.</p><br></br>
+          <p>Das <img src="../img/cyberduck2.jpg" alt="Bild von der Ente Cyberduck." height="100" width="100">, das <img src="../img/squirrel.jpg" alt="Bild des Eichhörnchens Squirrel" height="100" width="100">und die <img src="../img/github.png" alt="Bild von der Katze Github." height="170" width="170"> machen sich weiter auf den Weg nach links ins <img src="../img/photoshop2.jpg" alt="Bild der Bildbearbeitungssoftware Photoshop" height="100" width="100"> nach <img src="../img/burning-rom.jpg" alt="Bild der Software zum Brennen von CD, DVDs" height="150" width="150"> . Neben ihnen fließt der wilde und gefährliche Fluss <img src="../img/amazon.png" alt="Bild des Online-Geschäftes Amazon" height="100" width="100"> „as“, sogar <img src="../img/wireshark.jpg" alt="Bild der Software wireshark, man sieht einen Haifisch." height="100" width="100"> und <img src="../img/mySQL.png" alt="Bild der Software mit Namen mySQL " height="100" width="100">  schwimmen darin umher.</p>
 
           <div class="gedanken">
-                <p>„Maaahhh, meine Füße tun schon so weh vom vielen Watscheln. Ich mag nimma weiter gehen.“</p><br></br>
+                <p>„Maaahhh, meine Füße tun schon so weh vom vielen Watscheln. Ich mag nimma weiter gehen.“</p>
           </div> 
-          <p>Sagt das <img src="../img/cyberduck.png" height="100" width="100"> zum <img src="../img/squirrel.jpg" height="100" width="100">. In einer Millisekunde flitzt die <img src="../img/github.png" height="100" width="100"> wieder USB5-Geschwindigkeit zu einem Gasthaus, wo es heute als Tagesmenü gibt: „<img src="../img/netbeans.jpg" height="100" width="100">  mit Eicheln und Knödeln“</p><br></br>
+          <p>Sagt das <img src="../img/cyberduck2.jpg" alt="Bild von der Ente Cyberduck." height="100" width="100"> zum <img src="../img/squirrel.jpg" height="100" width="100">. In einer Millisekunde flitzt die <img src="../img/github.png" alt="Bild von der Katze Github." height="170" width="170"> wieder USB5-Geschwindigkeit zu einem Gasthaus, wo es heute als Tagesmenü gibt: <img src="../img/netbeans.jpg" alt="Bild der Java-Software mit Namen Netbeans, die Bohnen." height="100" width="100">  mit Eicheln und Knödeln“</p>
 
           <div class="gedanken">
-                <p>„wäääähhh, ich mag kein <img src="../img/netbeans.jpg" height="100" width="100">. Wenns wenigstens <img src="../img/eclipse.jpg" height="100" width="100"> gäbe und ein Seidl dazu.“</p><br></br>
+                <p>„wäääähhh, ich mag kein <img src="../img/netbeans.jpg" alt="Bild der Java-Software mit Namen Netbeans, die Bohnen." height="100" width="100">. Wenns wenigstens <img src="../img/eclipse.jpg" alt="Bild der Java-Software Eclipse" height="220" width="220"> gäbe und ein Seidl dazu.“</p>
                </div>      
 
-          Denkt das <img src="../img/cyberduck.png" height="100" width="100">. Doch es bleibt ihnen nichts anderes übrig, der Abgabetermin rückt immer näher und sie müssen sich stärken um endlich am Ziel anzukommen. Das Essen war nicht das beste, doch es macht satt. Als Nachtisch gibt es <img src="../img/javaScript.png" height="100" width="100"> und einen <img src="../img/cookie.png" height="100" width="100"> für jeden. Dann machen sie sich wieder auf ihre abenteuerliche <img src="../img/safari.jpg" height="100" width="100">. An der nächsten Weggabelung sind sie verzweifelt und ratlos und fragen deswegen <img src="../img/siri.jpg" height="100" width="100"> um Rat. „Das nächste <img src="../img/photoshop2.jpg" height="100" width="100">  ist nur 2GB weit entfernt.“</p><br></br>
+          Denkt das <img src="../img/cyberduck2.jpg" alt="Bild von der Ente Cyberduck." height="100" width="100">. Doch es bleibt ihnen nichts anderes übrig, der Abgabetermin rückt immer näher und sie müssen sich stärken um endlich am Ziel anzukommen. Das Essen war nicht das beste, doch es macht satt. Als Nachtisch gibt es <img src="../img/javaScript.png" alt="Bild der Software Java, gleichlautend mit dem Kaffee Java." height="150" width="150"> und einen <img src="../img/cookie.png" alt="Bild eines angebissenen Kekses als Andeutung auf die im Internet gesetzten cookies" height="100" width="100"> für jeden. Dann machen sie sich wieder auf ihre abenteuerliche <img src="../img/safari.jpg" alt="Bild des Internet Browsers mit Namen Safari" height="300" width="300">. An der nächsten Weggabelung sind sie verzweifelt und ratlos und fragen deswegen <img src="../img/siri.jpg" alt="Bild der automatischen Stimme vom Iphone: Siri." height="150" width="150"> um Rat. „Das nächste <img src="../img/photoshop2.jpg" alt="Bild der Fotobearbeitungs-Software Photoshop" height="100" width="100">  ist nur 2GB weit entfernt.“</p>
 
           <div class="gedanken">
-                <p>„Na geeeehhhh! 2 GB – das halten meine Füße nimma mehr aus. Ich streike. So eine blöde Idee, dass ich hierher gekommen bin!“</p><br></br>
+                <p>„Na geeeehhhh! 2 GB – das halten meine Füße nimma mehr aus. Ich streike. So eine blöde Idee, dass ich hierher gekommen bin!“</p>
           </div> 
-          <p><img src="../img/cyberduck.png" height="100" width="100"> setzt sich auf eine Parkbank inmitten vieler frischer und grün duftender <img src="../img/sourcetree.jpg" height="100" width="100"> .Plötzlich springt aus dem Dickicht ein wildes Satier hervor. Es ist der schreckliche <img src="../img/firefox.jpg" height="100" width="100"> . Er steht direkt vor dem <img src="../img/cyberduck.png" height="100" width="100">. Seinen gräßlich stinkenden Atem direkt in ihr Gesicht hauchend, das Maul weit geöffnet. Die Situation ist sehr brenzlig. Das schlaue kleine <img src="../img/github.png" height="100" width="100">holt einen Ast, der so geformt ist und auch genauso aussieht wie eine <img src="../img/phyton.jpg" height="100" width="100">und hält sie dem <img src="../img/firefox.jpg" height="100" width="100"> an seinen struppigen Schweif. </p><br></br>
+          <p><img src="../img/cyberduck2.jpg" alt="Bild von der Ente Cyberduck." height="100" width="100"> setzt sich auf eine Parkbank inmitten vieler frischer und grün duftender <img src="../img/sourcetree.jpg" alt="Bild eines Baums, stehend für sourcetree" height="100" width="100"> .Plötzlich springt aus dem Dickicht ein wildes Satier hervor. Es ist der schreckliche <img src="../img/firefox.jpg" alt="Bild des Internet-Browsers firefox" height="100" width="100"> . Er steht direkt vor dem <img src="../img/cyberduck2.jpg" alt="Bild von der Ente Cyberduck."height="100" width="100">. Seinen gräßlich stinkenden Atem direkt in ihr Gesicht hauchend, das Maul weit geöffnet. Die Situation ist sehr brenzlig. Das schlaue kleine <img src="../img/github.png" alt="Bild von der Katze Github." height="170" width="170">holt einen Ast, der so geformt ist und auch genauso aussieht wie eine <img src="../img/phyton.jpg" alt="Bild der Software phyton." height="200" width="200">und hält sie dem <img src="../img/firefox.jpg" alt="Bild des Internet-Browsers firefox" height="100" width="100"> an seinen struppigen Schweif. </p>
 
           <div class="panel-kontrast"> 
-                 <p>„waaaahhhhh, eine Schlange! Oh, nein!!!!“</p><br></br>
+                 <h1>„waaaahhhhh, eine Schlange!</h1><h1> Oh, nein!!!!“</h1>
           </div> 
-          <p>ruft er noch im Davonlaufen. Er läuft durch eine riesige, stachelige <img src="../img/raspberry.png" height="100" width="100"> Staude und verletzt sich durch die Stacheln. Doch er kann entkommen und alle drei sind heilfroh - sogar das <img src="../img/cyberduck.png" height="100" width="100"> ein bisschen. Sie spazieren erleichtert durch den Park und das Glück ist weiterhin auf ihrer Seite – sie finden endlich das <img src="../img/photoshop2.jpg" height="100" width="100">. Doch anstatt des versprochenen Gratis-Foto-Angebotes samt <img src="../img/iphone.jpg" height="100" width="100"> soll das Foto jetzt 1 <img src="../img/ruby.jpg" height="100" width="100">kosten.</p><br></br>
+          <p>ruft er noch im Davonlaufen. Er läuft durch eine riesige, stachelige <img src="../img/raspberry.png" alt="Bild des Mini-Computers mit Namen raspberry, wie die Himbeere." height="150" width="150"> Staude und verletzt sich durch die Stacheln. Doch er kann entkommen und alle drei sind heilfroh - sogar das <img src="../img/cyberduck2.jpg" alt="Bild von der Ente Cyberduck." height="100" width="100"> ein bisschen. Sie spazieren erleichtert durch den Park und das Glück ist weiterhin auf ihrer Seite – sie finden endlich das <img src="../img/photoshop2.jpg" alt="Bild der Photobearbeitungssoftware Photoshop" height="100" width="100">. Doch anstatt des versprochenen Gratis-Foto-Angebotes samt <img src="../img/iphone.jpg" alt="Bild des Telefons Iphone." height="100" width="100"> soll das Foto jetzt 1 <img src="../img/ruby.jpg" alt="Bild der Entwicklungssoftware mit Namen Ruby." height="150" width="150">kosten.</p>
            
           <div class="gedanken">
-                <p>„Das kann doch gar nicht wahr sein! Ich hätte doch einen <img src="../img/addblock.jpg" height="100" width="100"> installieren sollen!“</p><br></br>
+                <p>„Das kann doch gar nicht wahr sein! Ich hätte doch einen <img src="../img/addblock.jpg" alt="Bild einer Software, die Werbungen verhindert, genannt addblocker." height="100" width="100"> installieren sollen!“</p>
                   </div>   
 
-          <img src="../img/github.png" height="100" width="100"> hat schon wieder etwas gewiddert und läuft zum Marktschreier vor, der jedermann ins Gesicht schreit: „Sie sind der 10.000 Besucher unserer website und erhalten 1 <img src="../img/ruby.jpg" height="100" width="100"> gratis!“</p><br></br>
+          <img src="../img/github.png" alt="Bild von der Katze Github." height="170" width="170"> hat schon wieder etwas gewiddert und läuft zum Marktschreier vor, der jedermann ins Gesicht schreit: „Sie sind der 10.000 Besucher unserer website und erhalten 1 <img src="../img/ruby.jpg" alt="Bild einer Software, die Werbungen verhindert, genannt addblocker."height="100" width="100"> gratis!“</p>
 
-          <p>Ein Pferdewagen mit einem <img src="../img/android.jpg" height="100" width="100"> auf der Ladefläche hinten fährt vorbei. Es ist der berühmte R2D2 und alle Sa-Tiere verneigen sich tief vor der Macht, die er hat. Weil sich der Marktschreier auch so tief verneigt, verliert er den <img src="../img/ruby.jpg" height="100" width="100"> den er in seiner Hosentasche aufbewahrt hat und das <img src="../img/squirrel.jpg" height="100" width="100"> glaubt eine Eichel fallen zu hören und läuft sofort hin und nimmt sie mit. Alle Sa-Tiere gehen wieder ihrer normalen Beschäftigung nach und das <img src="../img/squirrel.jpg" height="100" width="100"> denkt sich:</p><br></br> 
+          <p>Ein Pferdewagen mit einem <img src="../img/android.jpg" alt="Bild eines Androiden, Software für Smartphones."height="100" width="100"> auf der Ladefläche hinten fährt vorbei. Es ist der berühmte R2D2 und alle Sa-Tiere verneigen sich tief vor der Macht, die er hat. Weil sich der Marktschreier auch so tief verneigt, verliert er den <img src="../img/ruby.jpg" alt="Bild der Entwicklungssoftware mit Namen Ruby." height="100" width="100"> den er in seiner Hosentasche aufbewahrt hat und das <img src="../img/squirrel.jpg" height="100" width="100"> glaubt eine Eichel fallen zu hören und läuft sofort hin und nimmt sie mit. Alle Sa-Tiere gehen wieder ihrer normalen Beschäftigung nach und das <img src="../img/squirrel.jpg" height="100" width="100"> denkt sich:</p>
 
           <div class="gedanken">
-                <p>„So ein Schmarrn! Das ist keine Eichel, das ist nur so ein hartes rotes Gestein. Ich könnte auch echt einmal was gutes finden, aber nein! Ich hab eine Pechsträhne.“</p><br></br>
+                <p>So ein Schmarrn! Das ist keine Eichel, das ist nur so ein hartes rotes Gestein. Ich könnte auch echt einmal was gutes finden, aber nein! Ich hab eine Pechsträhne.</p>
           </div> 
-          <p>Doch <img src="../img/github.png" height="100" width="100"> miaut so lange bei ihm, dass auch <img src="../img/cyberduck.png" height="100" width="100"> mitbekommt, welch großartigen Fund sie gemacht haben! Endlich können sie ins <img src="../img/photoshop2.jpg" height="100" width="100">  gehen. Der Fotograf ist ein großer <img src="../img/linux.jpg" height="100" width="100">und er macht ein wunderschönes Portraitfoto mit vielen Ebenen und Maskierungen.</p><br></br>
+          <p>Doch <img src="../img/github.png" alt="Bild von der Katze Github." height="170" width="170"> miaut so lange bei ihm, dass auch <img src="../img/cyberduck2.jpg" alt="Bild von der Ente Cyberduck."height="100" width="100"> mitbekommt, welch großartigen Fund sie gemacht haben! Endlich können sie ins <img src="../img/photoshop2.jpg" alt="Bild der Bildbearbeitungssoftware Photoshop."height="100" width="100">  gehen. Der Fotograf ist ein großer <img src="../img/linux.jpg" alt="Bild des Betriebssystems Linux, die als Logo einen Pinguin haben." height="100" width="100">und er macht ein wunderschönes Portraitfoto mit vielen Ebenen und Maskierungen.</p>
 
-          <p>Endlich haben sie es geschafft. Sie könnten glücklich sein, doch das <img src="../img/cyberduck.png" height="100" width="100"> denkt:</p><br></br>
-          „oh wie furchtbar! Es wird schon dunkel. Jetzt müssen wir den langen Weg auch wieder heim gehen. Weil so viel Action halte ich nicht aus, ich muss in mein Blätterbett zu Hause“.</p><br></br>
-
-          <p>So machen sie sich auf den langen <img src="../img/gateway.gif" height="100" width="100">, obwohl die Füsse schon sehr schwer sind und kaum jemand Kraft zum Reden hat.
-          Es ist schon ganz dunkel als sie zuhause ankommen und die Mutter des <img src="../img/cyberduck.png" height="100" width="100"> öffnet die Tür. Erleichtert und freuestrahlend nimmt sie ihre Tochter in die Arme und macht folgende <img src="../img/jquery.png" height="100" width="100">:</p><br></br>
+          <p>Endlich haben sie es geschafft. Sie könnten glücklich sein, doch das <img src="../img/cyberduck2.jpg" alt="Bild von der Ente Cyberduck." height="100" width="100"> denkt:</p>
+          
+          <div class="gedanken">
+          
+             <p>oh wie furchtbar! Es wird schon dunkel. Jetzt müssen wir den langen Weg auch wieder heim gehen. Weil so viel Action halte ich nicht aus, ich muss in mein Blätterbett zu Hause“.</p>
+          </div>
+             
+          <p>So machen sie sich auf den langen <img src="../img/gateway.gif" alt="Bild des gateways, Fachausdruck. Hier ist der Heimweg gemeint." height="100" width="100">, obwohl die Füsse schon sehr schwer sind und kaum jemand Kraft zum Reden hat.
+          Es ist schon ganz dunkel als sie zuhause ankommen und die Mutter des <img src="../img/cyberduck2.jpg" alt="Bild von der Ente Cyberduck." height="100" width="100"> öffnet die Tür. Erleichtert und freuestrahlend nimmt sie ihre Tochter in die Arme und macht folgende <img src="../img/jquery.png" height="150" width="150">:</p>
 
           <div class="gedanken">
                 <p>SELECT * FROM wo-warst-du-nur;</p><br></br>
           </div> 
-          <p>Da erzählen die drei ihr die ganze Geschichte, ihr Abenteuer. Die Mutter ist sehr froh, daß das <img src="../img/cyberduck.png" height="100" width="100"> heil nach Hause zurückgekommen ist. Sie freut sich auch über ihre neuen Freunde. Nach einem guten Abendessen reicht sie dem <img src="../img/cyberduck.png" height="100" width="100"> einen Brief voll mit Mehl, wo drinnensteht:</p><br></br>
+          <p>Da erzählen die drei ihr die ganze Geschichte, ihr Abenteuer. Die Mutter ist sehr froh, daß das <img src="../img/cyberduck.png" alt="Bild von der Ente Cyberduck." height="100" width="100"> heil nach Hause zurückgekommen ist. Sie freut sich auch über ihre neuen Freunde. Nach einem guten Abendessen reicht sie dem <img src="../img/cyberduck2.jpg" alt="Bild von der Ente Cyberduck." height="100" width="100"> einen Brief voll mit Mehl, wo drinnensteht:</p>
 
           <div class="gedanken">
-              <p>Sehr geehrte Frau <img src="../img/cyberduck.png" height="100" width="100">,
-              nachdem Sie jetzt schon 12Jahre alt sind,
+              <p>Sehr geehrte Frau <img src="../img/cyberduck2.jpg" alt="Bild von der Ente Cyberduck." height="100" width="100">,
+              nachdem Sie jetzt schon 12 Jahre alt sind,
               würden wir uns freuen, wenn Sie bei
-              <img src="../img/iphone.jpg" height="100" width="100"> mitmachen würden.
-              To unscribe this newsletter – push here</p><br></br>
+              <img src="../img/iphone.jpg" alt="Bild des Smartphones Iphone." height="100" width="100"> mitmachen würden.</p>
+              <p>To unscribe this newsletter – push here</p>
           </div> 
   
      
